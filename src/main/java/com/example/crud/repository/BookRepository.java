@@ -4,5 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.crud.model.Book;
 
 public interface BookRepository extends JpaRepository<Book, Long> {
-    List<Book> findByTitleContaining(String title);
+    List<Book> findByUserId(String userId);
+    List<Book> findByUserIdAndTitleContaining(String userId, String title);
 }

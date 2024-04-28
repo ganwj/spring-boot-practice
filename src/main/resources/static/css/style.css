@@ -1,0 +1,72 @@
+/***************************
+    GENERAL STYLES
+***************************/
+:root {
+    /* Color Palette */
+    --text-color: #444;
+}
+
+body {
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+        Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+/***************************
+    TABLE STYLES
+***************************/
+.actions {
+    white-space: nowrap;
+}
+
+/***************************
+    FORM STYLES
+***************************/
+.book-form {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/***************************
+    MISC STYLES
+***************************/
+.navbar {
+  padding: 0 10px;
+}
+
+.icon-dark {
+  color: grey;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 1px solid grey;
+}
+
+.search .fa-magnifying-glass {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.search button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  background: grey;
+}
